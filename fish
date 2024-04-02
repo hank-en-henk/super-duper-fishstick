@@ -6,3 +6,6 @@ alert("loading");
 document.body.contentEditable = 'true';
 document.designMode='on';
 alert("loaded");
+
+/// script3.js
+alert("hi")
