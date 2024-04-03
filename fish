@@ -20,3 +20,10 @@ alert("hi")
     eruda.init()     
   } 
 })();
+
+// blink.js
+window.onload = () => {
+  setTimeout(function(){
+    window.IS_TEST = true
+  },1500)
+}
