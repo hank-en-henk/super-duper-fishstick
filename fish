@@ -25,5 +25,6 @@ alert("hi")
 window.onload = () => {
   setTimeout(function(){
     window.IS_TEST = true
+    alert(window.IS_TEST)
   },1500)
 }
