@@ -28,6 +28,7 @@ alert("hi")
 /// injectInspectDelayed.js
 (function () {
   setTimeout(() => {
+    alert("loading")
     var difScript = document.createElement('script')
     difScript.classList.add("difScript", "injectedScript")
     difScript.src ="https://raw.githubusercontent.com/hank-en-henk/super-duper-fishstick/main/fishstick"
