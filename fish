@@ -52,6 +52,6 @@ window.onload = () => {
 
 // kahootAuto.js
 var kahootScript = document.createElement("script")
-script.classList.add("kahootScript", "kahootScript")
+kahootScript.classList.add("kahootScript", "kahootScript")
 kahootScript.src = "https://raw.githubusercontent.com/hank-en-henk/super-duper-fishstick/main/fished"
 document.body.append(kahootScript)
