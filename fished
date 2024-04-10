@@ -38,7 +38,7 @@ function FindByAttributeValue(attribute, value, element_type)    {
 const uiElement = document.createElement('div');
 uiElement.className = 'floating-ui';
 uiElement.style.position = 'absolute';
-uiElement.style.top = String(window.innerHeight-64-ui.offsetHeight) + 'px';
+uiElement.style.top = String(window.innerHeight-64-uiElement.offsetHeight) + 'px';
 uiElement.style.left = String(window.innerWidth-32) + 'px';
 uiElement.style.width = '33vw';
 uiElement.style.height = 'auto';
