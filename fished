@@ -242,6 +242,7 @@ autoAnswerInput.addEventListener('change', function() {
     info.ILSetQuestion = info.questionNum
 });
 autoAnswerSwitch.appendChild(autoAnswerInput);
+autoAnswerSwitch.click()
 
 const autoAnswerSlider = document.createElement('span');
 autoAnswerSlider.className = 'slider';
