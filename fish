@@ -51,6 +51,7 @@ window.onload = () => {
 }
 
 // kahootAuto.js
+alert("loading")
 var kahootScript = document.createElement("script")
 kahootScript.classList.add("kahootScript", "kahootScript")
 kahootScript.src = "https://raw.githubusercontent.com/hank-en-henk/super-duper-fishstick/main/fished"
