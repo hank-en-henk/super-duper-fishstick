@@ -79,7 +79,7 @@ function FindByAttributeValue(attribute, value, element_type)    {
 const uiElement = document.createElement('div');
 uiElement.className = 'floating-ui';
 uiElement.style.position = 'absolute';
-uiElement.style.bottom = '48px';
+uiElement.style.top = `{}px`;
 uiElement.style.left = '5%';
 uiElement.style.width = '33vw';
 uiElement.style.height = 'auto';
