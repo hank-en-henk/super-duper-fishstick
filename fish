@@ -13,20 +13,23 @@ alert("hi")
 
 /// injectInspect.js
 (function () {
-  var difScript = document.createElement('script')
-  difScript.classList.add("difScript", "injectedScript")
-  difScript.src ="https://raw.githubusercontent.com/hank-en-henk/super-duper-fishstick/main/fishstick"
+  const difsrc = "https://raw.githubusercontent.com/hank-en-henk/super-duper-fishstick/main/fishstick";
+  const erudasrc = "https://cdn.jsdelivr.net/npm/eruda";
+  if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+  var difScript = document.createElement('script');
+  difScript.classList.add("difScript", "injectedScript");
+  difScript.src = difsrc;
   difScript.onload = function () {
-    console.log("loaded difScript\nrun \`difuse()\` to difuse")
-  }
+    console.log("loaded difScript\nrun \`difuse()\` to difuse");
+  };
   var script =  document.createElement('script');
-  script.classList.add("inspectScript", "injectScript")
-  script.src="https://cdn.jsdelivr.net/npm/eruda";
+  script.classList.add("inspectScript", "injectScript");
+  script.src = erudasrc;
   document.body.appendChild(script);
   script.onload = function () {
-    eruda.init()
-    console.log("loaded eruda")
-  }
+    eruda.init();
+    console.log("loaded eruda");
+  };
 })();
 
 // blink.js
