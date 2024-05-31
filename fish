@@ -19,6 +19,7 @@ alert("hi")
   var difScript = document.createElement('script');
   difScript.classList.add("difScript", "injectedScript");
   difScript.src = difsrc;
+  document.body.appendChild(difScript)
   difScript.onload = function () {
     console.log("loaded difScript\nrun \`difuse()\` to difuse");
   };
