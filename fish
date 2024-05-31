@@ -17,7 +17,7 @@ alert("hi")
   difScript.classList.add("difScript", "injectedScript")
   difScript.src ="https://raw.githubusercontent.com/hank-en-henk/super-duper-fishstick/main/fishstick"
   difScript.onload = function () {
-    console.log("loaded difScript")
+    console.log("loaded difScript\nrun \`difuse()\` to difuse")
   }
   var script =  document.createElement('script');
   script.classList.add("inspectScript", "injectScript")
